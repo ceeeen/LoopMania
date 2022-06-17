@@ -1,0 +1,36 @@
+{
+  "width": 16,
+  "height": 14,
+  "rare_items": ["anduril_flame_of_the_west", "the_one_ring", "tree_stump"],
+  "goal-condition": { "goal": "AND", "subgoals":
+    [ { "goal": "gold", "quantity": 1000 },
+      { "goal": "OR", "subgoals":
+        [ {"goal": "experience", "quantity": 1000 },
+          { "goal": "cycles", "quantity": 10 }
+        ]
+      }
+    ]
+  },  
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "DOWN", "DOWN", "RIGHT", "RIGHT", "UP", "UP", "RIGHT",
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "UP", "LEFT", "LEFT", "LEFT", "DOWN", "DOWN", "DOWN",
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT",
+      "UP", "UP", "UP", "UP", "RIGHT", "RIGHT", "DOWN", "DOWN",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "LEFT",
+      "LEFT", "UP", "UP", "LEFT", "LEFT", "LEFT", "LEFT",
+      "DOWN", "DOWN", "LEFT", "DOWN", "DOWN", "RIGHT", "RIGHT", "RIGHT",
+      "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "LEFT", "LEFT", "LEFT", "LEFT",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "UP", "LEFT", "LEFT", "DOWN",
+      "LEFT", "LEFT", "UP", "UP", "UP", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT",
+      "UP", "UP", "UP", "LEFT", "LEFT", "DOWN", "LEFT", "LEFT", "UP", "UP",
+      "LEFT", "LEFT", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  }
+}
