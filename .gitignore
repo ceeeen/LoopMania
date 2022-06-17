@@ -1,7 +1,5 @@
 *.class
 *.log
 hs_err_pid*
-/bin/
-/lib/
 /build/
 /.gradle/
